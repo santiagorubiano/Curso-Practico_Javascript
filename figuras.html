@@ -6,10 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geometricas - curso practico javascript </title>
 </head>
-<body>
+<header>
     <h1>
         Figuras geometricas
     </h1>
+    <p>
+        este es el primer taller de javascript
+    </p>
+</header>
+ <section id="cuadrado"> 
+    <h2>
+          Calcula el area y perimetro de un cuadrado
+    </h2>
+    <form action="">
+        <label for="InputCuadrado">Escribe cuanto mide cada lado de el cuadrado:   </label>
+        <input id="InputCuadrado" type="number"
+        placeholder="lado">
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+                calcular el perimetro
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()">
+
+                calcular el area 
+            </button>
+    </form>
+</section>
+<section id="triangulo"> 
+    <h2>
+          Calcula el area y perimetro de un triangulo
+    </h2>
+    <form action="">
+        <label for="InputTriangulo">Escribe cuanto mide cada lado de el triangulo  la altura :   </label>
+        <input id="Inputtriangulo1" type="number"
+        placeholder="Lado 1">
+        <input id="Inputtriangulo2" type="number"
+        placeholder="Lado 2">
+        <input id="Inputtriangulobase" type="number"
+        placeholder="Base">
+        <input id="Inputtrianguloaltura" type="number"
+        placeholder="Altura">
+        <button type="button" onclick="calcularPerimetroTriangulo()">
+                calcular el perimetro
+        </button>
+        <button type="button" onclick="calcularAreaTriangulo()">
+
+                calcular el area 
+            </button>
+    </form>
+</section>
+
+<body>
+   
     <script src="./figuras.js">
         
     </script>
