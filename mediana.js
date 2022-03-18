@@ -9,10 +9,11 @@ function calcularMediaAritmetica(lista){
     }
 
 const lista1=[
-    100,
-    200,
-    500,
-    400000000,
+    500, //100
+    200,//200
+    100,//500
+    400000000,// 900
+    900//40000000
     
 ];
     
@@ -29,14 +30,17 @@ function esPar(n){
 let mediana
 
 if (esPar(lista1.length)){
-    const elemento1 = lista1[mitadLista1];
-    const elemento2 = lista1[mitadLista1 -1];
+    const listaOrdenada = lista1.sort((a,b)=>a-b)
+    const elemento1 = listaOrdenada[mitadLista1];
+    const elemento2 = listaOrdenada[mitadLista1 -1];
     const promedioElemento1y2 =  calcularMediaAritmetica([
         elemento1,
         elemento2,
     ])
     mediana = promedioElemento1y2;
 }else{
-    mediana = lista1[mitadLista1];
+    const listaOrdenada = lista1.sort((a,b)=>a-b)
+
+    mediana = listaOrdenada[mitadLista1];
 
 }
