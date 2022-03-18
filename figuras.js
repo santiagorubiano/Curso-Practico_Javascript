@@ -77,59 +77,20 @@ function calcularAreaTriangulo(){
     alert (area)
 }
 
-// //// triangulo perimetro
-// function calcularPerimetroTriangulo() {
-//     const Lado1 = document.getElementById("InputTrianguloLado1");
-//     const L1 = parseFloat(Lado1.value);
+function calcularDiametroCirculo(){
+    const radio = document.getElementById("InputradioCirculo")
+    const R = parseInt(radio.value);
 
+    const diametro = diametroCirculo(R);
+    alert(diametro )
+   
+}
+function calcularAreaCirculo(){
+    const radio = document.getElementById("InputradioCirculo")
+    const R = parseInt(radio.value);
 
-//     const Lado2 = document.getElementById("InputTrianguloLado2");
-//     const L2 = parseFloat(Lado2.value);
+    const area = areaCirculo(R);
+    alert(area )
 
-
-//     const Base = document.getElementById("InputTrianguloBase");
-//     const B = parseFloat(Base.value);
-
-
-//     const perimetro = perimetroTriangulo(L1, L2, B)
-//     alert("El Perimetro del triangulo es de: " + perimetro + " cm");
-// }
-
-// // triangulo area
-// function calcularAreaTriangulo() {
-//     const Base = document.getElementById("InputTrianguloBase");
-//     const B = parseFloat(Base.value);
-
-
-//     const Altura = document.getElementById("InputTrianguloAltura");
-//     const A = parseFloat(Altura.value);
-
-//     const perimetro = areaTriangulo(A,B);
-//     alert("El area del triangulo es de: " + perimetro + " cm");
-// }
-
-// // circulo Diametro
-// function calcularDiametroCirculo() {
-//     const Diametro = document.getElementById("InputCirculoDiametro");
-//     const D = parseFloat(Diametro.value);
-
-//     const diametro = diametroCirculo(D);
-//     alert("El Diametro de tu circulo es de: " + diametro + " cm");
-// }
-//  //Circulo Area
-// function calcularAreaCirculo() {
-//     const Area = document.getElementById("InputCirculoArea");
-//     const A = parseFloat(Area.value);
-
-//     const area = Math.round(areaCirculo(A));
-//     alert("El Area de tu circulo es de: " + area + " cm");
-// }
-// //Circulo Circunferencia
-// function calcularCircunferenciaCirculo() {
-//     const Circunferencia = document.getElementById("InputCirculoCircunferencia");
-//     const C = parseFloat(Circunferencia.value);
-
-//     const circunferencia = Math.round( perimetroCirculo(C));
-//     alert("La Circunferencia de tu circulo es de: " + circunferencia + " cm");
-// }
-// triangulo perimetro
+    
+}
